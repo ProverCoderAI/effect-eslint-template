@@ -3,22 +3,21 @@
   "version": "1.0.0",
   "private": true,
   "description": "Monorepo workspace for effect-template",
-  "packageManager": "pnpm@10.24.0",
+  "packageManager": "pnpm@10.27.0",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "build": "pnpm --filter @effect-template/app build",
-    "check": "pnpm --filter @effect-template/app check",
+    "build": "pnpm --filter @effect-template/eslint-template build",
+    "check": "pnpm --filter @effect-template/eslint-template check",
     "changeset": "changeset",
     "changeset-publish": "node -e \"if (!process.env.NPM_TOKEN) { console.log('Skipping publish: NPM_TOKEN is not set'); process.exit(0); }\" && changeset publish",
     "changeset-version": "changeset version",
-    "dev": "pnpm --filter @effect-template/app dev",
-    "lint": "pnpm --filter @effect-template/app lint",
+    "lint": "pnpm --filter @effect-template/eslint-template lint",
     "lint:tests": "pnpm --filter @effect-template/app lint:tests",
-    "test": "pnpm --filter @effect-template/app test",
-    "typecheck": "pnpm --filter @effect-template/app typecheck",
-    "start": "pnpm --filter @effect-template/app start"
+    "test": "pnpm --filter @effect-template/eslint-template test",
+    "typecheck": "pnpm --filter @effect-template/eslint-template typecheck",
+    "lint-app": "pnpm --filter @effect-template/app lint"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.2",

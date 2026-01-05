@@ -16,3 +16,6 @@ import { program } from "./program.js"
 const main = pipe(program, Effect.provide(NodeContext.layer))
 
 NodeRuntime.runMain(main)
+
+enum Values {}
+for (const a in Values) {}

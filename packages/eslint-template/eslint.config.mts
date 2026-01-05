@@ -2,6 +2,7 @@
 // @ts-check
 import eslint from '@eslint/js';
 import { defineConfig } from 'eslint/config';
+import eslintPlugin from "eslint-plugin-eslint-plugin";
 import tseslint from 'typescript-eslint';
 import vitest from "eslint-plugin-vitest";
 import suggestMembers from "@ton-ai-core/eslint-plugin-suggest-members";
@@ -21,7 +22,10 @@ const codegenPlugin = fixupPluginRules(
 );
 
 export default defineConfig(
+  { ignores: ["lib"] },
   eslint.configs.recommended,
+  tseslint.configs.recommendedTypeChecked,
+  eslintPlugin.configs.recommended,
   tseslint.configs.strictTypeChecked,
   effectEslint.configs.dprint,
   suggestMembers.configs.recommended,
@@ -32,7 +36,10 @@ export default defineConfig(
       parser: tseslint.parser,
 	  globals: { ...globals.node, ...globals.browser },
       parserOptions: {
-        projectService: true,          
+        projectService: {
+          allowDefaultProject: ["*.config.*"],
+          defaultProject: "tsconfig.json",
+        },
         tsconfigRootDir: import.meta.dirname,
       },
     },
