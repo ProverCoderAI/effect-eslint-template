@@ -67,6 +67,7 @@
     "dev": "tsc -p tsconfig.build.json --watch",
     "lint": "npx @ton-ai-core/vibecode-linter src/",
     "lint:tests": "npx @ton-ai-core/vibecode-linter tests/",
+    "lint:effect": "eslint --config eslint.effect-ts-check.config.mjs",
     "check": "pnpm run typecheck",
     "prestart": "pnpm run build",
     "start": "node lib/index.js",
