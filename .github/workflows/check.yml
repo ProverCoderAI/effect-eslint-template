@@ -49,6 +49,16 @@ jobs:
         run: npm install -g typescript @biomejs/biome
       - run: pnpm lint
 
+  lint-effect:
+    name: Lint Effect-TS
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        uses: ./.github/actions/setup
+      - run: pnpm lint:effect
+
   test:
     name: Test
     runs-on: ubuntu-latest
