@@ -4,7 +4,7 @@ import eslint from '@eslint/js';
 import { defineConfig } from "eslint/config";
 import tseslint from 'typescript-eslint';
 import vitest from "eslint-plugin-vitest";
-import suggestMembers from "@ton-ai-core/eslint-plugin-suggest-members";
+import suggestMembers from "@prover-coder-ai/eslint-plugin-suggest-members";
 import sonarjs from "eslint-plugin-sonarjs";
 import unicorn from "eslint-plugin-unicorn";
 import * as effectEslint from "@effect/eslint-plugin";
@@ -15,7 +15,7 @@ import simpleImportSort from "eslint-plugin-simple-import-sort";
 import sortDestructureKeys from "eslint-plugin-sort-destructure-keys";
 import globals from "globals";
 import eslintCommentsConfigs from "@eslint-community/eslint-plugin-eslint-comments/configs";
-import exampleTypedLinting from "eslint-template";
+import exampleTypedLinting from "@effect-template/eslint-template";
 
 const codegenPlugin = fixupPluginRules(
 	codegen as unknown as Parameters<typeof fixupPluginRules>[0],
