@@ -19,7 +19,6 @@ import eslintCommentsConfigs from "@eslint-community/eslint-plugin-eslint-commen
 const codegenPlugin = fixupPluginRules(
 	codegen as unknown as Parameters<typeof fixupPluginRules>[0],
 );
-const suggestMembersRecommended = suggestMembers.configs["recommended"];
 
 export default tseslint.config(
   { ignores: ["lib"] },
@@ -28,7 +27,10 @@ export default tseslint.config(
   eslintPlugin.configs.recommended,
   tseslint.configs.strictTypeChecked,
   effectEslint.configs.dprint,
-  ...(suggestMembersRecommended ? [suggestMembersRecommended] : []),
+  {
+    ...suggestMembers.configs.recommended,
+    files: ["**/*.{ts,tsx,js,jsx}"]
+  },
   eslintCommentsConfigs.recommended,
   {
     name: "analyzers",
