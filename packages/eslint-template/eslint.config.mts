@@ -4,7 +4,7 @@ import eslint from '@eslint/js';
 import eslintPlugin from "eslint-plugin-eslint-plugin";
 import tseslint from 'typescript-eslint';
 import vitest from "@vitest/eslint-plugin";
-import suggestMembers from "@prover-coder-ai/eslint-plugin-suggest-members-aliased";
+import suggestMembers from "@prover-coder-ai/eslint-plugin-suggest-members";
 import sonarjs from "eslint-plugin-sonarjs";
 import unicorn from "eslint-plugin-unicorn";
 import * as effectEslint from "@effect/eslint-plugin";
