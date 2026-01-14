@@ -3,7 +3,7 @@
 import eslint from '@eslint/js';
 import eslintPlugin from "eslint-plugin-eslint-plugin";
 import tseslint from 'typescript-eslint';
-import vitest from "eslint-plugin-vitest";
+import vitest from "@vitest/eslint-plugin";
 import suggestMembers from "@prover-coder-ai/eslint-plugin-suggest-members";
 import sonarjs from "eslint-plugin-sonarjs";
 import unicorn from "eslint-plugin-unicorn";
@@ -240,11 +240,9 @@ export default tseslint.config(
   },
   {
     files: ['**/*.{test,spec}.{ts,tsx}', 'tests/**', '**/__tests__/**'],
-    ...vitest.configs.all,
+    ...vitest.configs.recommended,
     languageOptions: {
-      globals: {
-        ...vitest.environments.env.globals,
-      },
+      globals: vitest.environments.edge.globals,
     },
     rules: {
       // Allow eslint-disable/enable comments in test files for fine-grained control
