@@ -34,7 +34,7 @@
     "url": "https://github.com/ProverCoderAI/effect-template/issues"
   },
   "homepage": "https://github.com/ProverCoderAI/effect-template#readme",
-  "packageManager": "pnpm@10.28.0",
+  "packageManager": "pnpm@10.28.1",
   "dependencies": {
     "@effect/cli": "^0.73.0",
     "@effect/cluster": "^0.56.1",
@@ -60,11 +60,11 @@
     "@eslint/compat": "2.0.1",
     "@eslint/eslintrc": "3.3.3",
     "@eslint/js": "9.39.2",
-    "@prover-coder-ai/eslint-plugin-suggest-members": "^0.0.13",
+    "@prover-coder-ai/eslint-plugin-suggest-members": "^0.0.15",
     "@ton-ai-core/vibecode-linter": "^1.0.6",
     "@types/node": "^25.0.9",
-    "@typescript-eslint/eslint-plugin": "^8.53.0",
-    "@typescript-eslint/parser": "^8.53.0",
+    "@typescript-eslint/eslint-plugin": "^8.53.1",
+    "@typescript-eslint/parser": "^8.53.1",
     "@vitest/coverage-v8": "^4.0.17",
     "eslint": "^9.39.2",
     "eslint-import-resolver-typescript": "^4.4.4",
@@ -79,7 +79,7 @@
     "globals": "^17.0.0",
     "jscpd": "^4.0.7",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.53.0",
+    "typescript-eslint": "^8.53.1",
     "vite": "^7.3.1",
     "vite-tsconfig-paths": "^6.0.4",
     "vitest": "^4.0.17"
