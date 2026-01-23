@@ -1,10 +1,10 @@
 {
   "dependencies": {
-    "@effect/cli": "^0.73.0",
+    "@effect/cli": "^0.73.1",
     "@effect/cluster": "^0.56.1",
     "@effect/experimental": "^0.58.0",
-    "@effect/platform": "^0.94.1",
-    "@effect/platform-node": "^0.104.0",
+    "@effect/platform": "^0.94.2",
+    "@effect/platform-node": "^0.104.1",
     "@effect/printer": "^0.47.0",
     "@effect/printer-ansi": "^0.47.0",
     "@effect/rpc": "^0.73.0",
@@ -13,7 +13,7 @@
     "@effect/typeclass": "^0.38.0",
     "@effect/workflow": "^0.16.0",
     "@typescript-eslint/utils": "8.53.1",
-    "effect": "^3.19.14",
+    "effect": "^3.19.15",
     "ts-morph": "^27.0.2"
   },
   "devDependencies": {
@@ -33,7 +33,7 @@
     "@typescript-eslint/eslint-plugin": "^8.53.1",
     "@typescript-eslint/parser": "^8.53.1",
     "@typescript-eslint/rule-tester": "8.53.1",
-    "@vitest/coverage-v8": "^4.0.17",
+    "@vitest/coverage-v8": "^4.0.18",
     "eslint": "^9.39.2",
     "eslint-doc-generator": "^3.0.2",
     "eslint-import-resolver-typescript": "^4.4.4",
@@ -45,13 +45,13 @@
     "eslint-plugin-sort-destructure-keys": "^2.0.0",
     "eslint-plugin-unicorn": "^62.0.0",
     "@vitest/eslint-plugin": "^1.6.6",
-    "globals": "^17.0.0",
+    "globals": "^17.1.0",
     "jscpd": "^4.0.7",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.53.1",
     "vite": "^7.3.1",
     "vite-tsconfig-paths": "^6.0.4",
-    "vitest": "^4.0.17"
+    "vitest": "^4.0.18"
   },
   "exports": {
     ".": {
