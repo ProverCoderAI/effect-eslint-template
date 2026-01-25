@@ -1,10 +1,10 @@
 name: Release
+
 on:
-  workflow_dispatch:
-  pull_request:
+  workflow_run:
+    workflows: ["Check"]
     branches: [main]
-  push:
-    branches: [main]
+    types: [completed]
 
 permissions:
   contents: write
