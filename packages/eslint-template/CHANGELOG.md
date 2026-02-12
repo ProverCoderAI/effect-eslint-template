@@ -1,5 +1,11 @@
 # @effect-template/eslint-template
 
+## 0.0.9
+
+### Patch Changes
+
+- chore: automated version bump
+
 ## 0.0.8
 
 ### Patch Changes
