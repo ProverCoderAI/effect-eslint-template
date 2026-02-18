@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "Monorepo workspace for effect-template",
-  "packageManager": "pnpm@10.29.3",
+  "packageManager": "pnpm@10.30.0",
   "workspaces": [
     "packages/*"
   ],
@@ -42,9 +42,6 @@
       "@parcel/watcher",
       "msgpackr-extract",
       "unrs-resolver"
-    ],
-    "patchedDependencies": {
-      "@typescript-eslint/eslint-plugin@8.55.0": "patches/@typescript-eslint__eslint-plugin@8.55.0.patch"
-    }
+    ]
   }
 }
