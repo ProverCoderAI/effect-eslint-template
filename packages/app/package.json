@@ -72,7 +72,7 @@
     "@effect-template/eslint-template": "workspace:*",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
-    "eslint-plugin-sonarjs": "^3.0.7",
+    "eslint-plugin-sonarjs": "^4.0.0",
     "eslint-plugin-sort-destructure-keys": "^3.0.0",
     "eslint-plugin-unicorn": "^63.0.0",
     "@vitest/eslint-plugin": "^1.6.9",
