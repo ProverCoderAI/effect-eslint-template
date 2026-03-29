@@ -12,5 +12,15 @@
   "prBodyNotes": ["cc @skulidropek"],
 
   "prConcurrentLimit": 1,
-  "prHourlyLimit": 1
+  "prHourlyLimit": 1,
+
+  "platformAutomerge": true,
+  "packageRules": [
+    {
+      "description": "Automerge non-major updates when CI is green",
+      "matchUpdateTypes": ["minor", "patch", "digest", "lockFileMaintenance"],
+      "automerge": true,
+      "automergeType": "pr"
+    }
+  ]
 }
