@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "Monorepo workspace for effect-template",
-  "packageManager": "pnpm@10.30.0",
+  "packageManager": "pnpm@11.25.0",
   "workspaces": [
     "packages/*"
   ],
@@ -21,8 +21,8 @@
     "lint-app": "pnpm --filter @effect-template/app lint"
   },
   "devDependencies": {
-    "@changesets/changelog-github": "^0.5.2",
-    "@changesets/cli": "^2.29.8"
+    "@changesets/changelog-github": "^1.0.1",
+    "@changesets/cli": "^3.0.2"
   },
   "repository": {
     "type": "git",
